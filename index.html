@@ -76,6 +76,9 @@ line-height: 100%;
           $("#title_").css("position", "absolute");
           $("#title_").css("left", (window.innerWidth - $("#title_").width())/2 + "px");
           $("#title_").css("top", (window.innerHeight - $("#title_").height())/2 + "px");
+      $("#btn").css("position", "absolute");
+      $("#btn").css("left", (window.innerWidth - $("#btn").width())/2 + "px");
+      $("#btn").css("top", (window.innerHeight - $("#title_").height())/2 + 75 + "px");
       $("#header > button").click(function() {
           $("#header > button").removeClass("selected");
           $(this).addClass("selected");
@@ -112,14 +115,15 @@ line-height: 100%;
   
   
   </div>
-  <div id="title_" style="font-family:'Montserrat'; font-size: 60px; color: rgb(255, 255, 210); opacity: 0.9">
+  <div id="title_" style="font-family:'Montserrat'; font-size: 60px; color: rgb(255, 255, 180); opacity: 0.9">
     Children of War
   </div>
+  <button id="btn" style="color: white; border: 3px white; background: none">Get Involved</button
   
   <div id="mission"></div>
   <div id="about"></div>
   <div id="stories"></div>
-  <div id="Socialmedia"></div>
+  <div id="socialmedia"></div>
   
 
 </body>
