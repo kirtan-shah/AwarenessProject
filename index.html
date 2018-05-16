@@ -64,14 +64,21 @@ line-height: 100%;
    color: gray; 
   }
   
+  .selected {
+   color: gray; 
+  }
+  
 </style>
   
   <script>
+    
     $(document).ready(function() {
-      $("#header > button").click(function() {
           $("#title_").css("position", "absolute");
           $("#title_").css("left", (window.innerWidth - $("#title_").width())/2 + "px");
           $("#title_").css("top", (window.innerHeight - $("#title_").height())/2 + "px");
+      $("#header > button").click(function() {
+          $("#header > button").removeClass("selected");
+          $(this).addClass("selected");
       });
     });
 
@@ -105,7 +112,7 @@ line-height: 100%;
   
   
   </div>
-  <div id="title_" style="font-family:'Montserrat'; font-size: 60px; color: rgb(20, 100, 50)">
+  <div id="title_" style="font-family:'Montserrat'; font-size: 60px; color: rgb(255, 255, 210); opacity: 0.9">
     Children of War
   </div>
   
