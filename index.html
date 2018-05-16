@@ -21,9 +21,14 @@
   display: block;
   background: red;
   opacity: 0.3;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+  
  }
+  
+  #back {
+     -webkit-filter: blur(5px);
+     filter: blur(5px);
+     z-index: -1000;
+  }
   
   #header > button {
     background: none;
@@ -56,7 +61,7 @@
   </button>
   
   </div>
-    <img src="https://gdb.voanews.com/57F0FD98-528A-418C-9EE5-B67F18A1FEAC_w1023_r1_s.jpg" style="width:100%"/>
+    <img id="back" src="https://gdb.voanews.com/57F0FD98-528A-418C-9EE5-B67F18A1FEAC_w1023_r1_s.jpg" style="width:100%"/>
 
 <div id="content">
   
