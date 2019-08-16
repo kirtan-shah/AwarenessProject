@@ -1,21 +1,11 @@
 <html>
   <head>
+    <script src="https://platform-api.sharethis.com/js/sharethis.js#property=5d561386c60153001277b699&product=inline-follow-buttons"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous" ></script>
     <link rel="stylesheet" href="/main.css" />
-
-    <script>
-      $(document).ready(function() {
-          $("#title_").css("position", "absolute");
-          $("#title_").css("left", (window.innerWidth - $("#title_").width())/2 + "px");
-          $("#title_").css("top", (window.innerHeight - $("#title_").height())/2 + "px");
-          $("#btn").css("position", "absolute");
-          $("#btn").css("left", (window.innerWidth - $("#btn").width())/2 + "px");
-          $("#btn").css("top", (window.innerHeight - $("#title_").height())/2 + 140 + "px");
-      });
-    </script>
   </head>
   <body>
     <div id="header">
@@ -36,12 +26,12 @@
 
     <div id="overlay"></div>
 
-    <div id="title_" style="font-family:'Montserrat'; font-size: 60px; color: rgb(255, 255, 180); opacity: 0.9">
-      Children of War
+    <div id="content">
+        <div class="info">
+            <h1 id="support-title">Support the movement</h1>
+            <div class="sharethis-inline-follow-buttons" style="padding-top: 50px; font-size: 1.6em;"></div>
+        </div>
     </div>
-    <button id="btn"><a href="/mission/">Get Involved</a></button>
 
   </body>
-
-
 </html>
